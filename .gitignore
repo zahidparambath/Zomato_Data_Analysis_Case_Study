@@ -1,2 +1,1 @@
-# ignore ALL .csv files
-*.csv
+Data/Raw/Zomato_Dataset/

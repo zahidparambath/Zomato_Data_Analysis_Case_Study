@@ -63,11 +63,10 @@ def process_row(index, row):
 # Load the CSV file
 df = pd.read_csv('Data/Processed/combined_data.csv')
 
-# Add new columns for latitude and longitude in the original dataframe
 df['latitude'] = None
 df['longitude'] = None
 
-# Sample 5,000 random rows and include all rows where city="Kochi"
+# Sample 10000 random rows and include all rows where city="Kochi"
 sampled_df = pd.concat([df[df['CITY'] == 'Kochi'], df[df['CITY'] != 'Kochi'].sample(n=10000, random_state=42)])
 
 # Use ThreadPoolExecutor to parallelize the requests

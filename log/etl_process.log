@@ -1,0 +1,7 @@
+2024-08-28 16:17:17 - INFO - Starting the ETL process: Loading CSV to MySQL staging table.
+2024-08-28 16:17:17 - INFO - Loading CSV file: Data\Processed\cleaned_enriched_data.csv
+2024-08-28 16:17:17 - INFO - CSV file loaded successfully. Number of rows: 105623
+2024-08-28 16:17:17 - INFO - Creating database engine.
+2024-08-28 16:17:17 - INFO - Loading DataFrame into MySQL staging table.
+2024-08-28 16:17:23 - INFO - Data loaded successfully into the staging table!
+2024-08-28 16:17:23 - INFO - ETL process completed.

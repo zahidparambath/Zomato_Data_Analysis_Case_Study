@@ -1,0 +1,16 @@
+2024-08-29 17:18:10,771 - INFO - Loading data from Data\Processed\enriched_combined_data.csv
+2024-08-29 17:18:11,172 - INFO - Starting the data cleaning process
+2024-08-29 17:18:11,172 - INFO - Cleaning the rating and votes column
+2024-08-29 17:18:11,252 - INFO - Cleaned the rating and votes column
+2024-08-29 17:18:11,473 - INFO - Duplicate rows removed
+2024-08-29 17:18:11,473 - INFO - Data cleaning process completed
+2024-08-29 17:18:12,628 - INFO - Starting data load to MySQL table : staging_table
+2024-08-29 17:18:12,628 - INFO - Error loading data into MySQL : NDFrame.to_sql() got an unexpected keyword argument 'if_exist'
+2024-08-29 17:19:44,791 - INFO - Loading data from Data\Processed\enriched_combined_data.csv
+2024-08-29 17:19:45,173 - INFO - Starting the data cleaning process
+2024-08-29 17:19:45,173 - INFO - Cleaning the rating and votes column
+2024-08-29 17:19:45,227 - INFO - Cleaned the rating and votes column
+2024-08-29 17:19:45,355 - INFO - Duplicate rows removed
+2024-08-29 17:19:45,355 - INFO - Data cleaning process completed
+2024-08-29 17:19:45,402 - INFO - Starting data load to MySQL table : staging_table
+2024-08-29 17:19:52,948 - INFO - Data loaded successfully into the staging_table table

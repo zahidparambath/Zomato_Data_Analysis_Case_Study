@@ -14,3 +14,35 @@
 2024-08-29 17:19:45,355 - INFO - Data cleaning process completed
 2024-08-29 17:19:45,402 - INFO - Starting data load to MySQL table : staging_table
 2024-08-29 17:19:52,948 - INFO - Data loaded successfully into the staging_table table
+2024-09-04 15:08:56,245 - INFO - Loading data from Data\Processed\enriched_combined_data.csv
+2024-09-04 15:08:56,640 - INFO - Starting the data cleaning process
+2024-09-04 15:08:56,640 - INFO - Cleaning the rating and votes column
+2024-09-04 15:08:56,696 - INFO - Cleaned the rating and votes column
+2024-09-04 15:08:56,819 - INFO - Duplicate rows removed
+2024-09-04 15:08:56,819 - INFO - Data cleaning process completed
+2024-09-04 15:08:57,207 - INFO - Starting data load to MySQL table : staging_table
+2024-09-04 15:09:04,971 - INFO - Data loaded successfully into the staging_table table
+2024-09-04 15:12:03,984 - INFO - Loading data from Data\Processed\enriched_combined_data.csv
+2024-09-04 15:12:04,607 - INFO - Starting the data cleaning process
+2024-09-04 15:12:04,607 - INFO - Cleaning the rating and votes column
+2024-09-04 15:12:04,729 - INFO - Cleaned the rating and votes column
+2024-09-04 15:12:04,863 - INFO - Duplicate rows removed
+2024-09-04 15:12:04,863 - INFO - Data cleaning process completed
+2024-09-04 15:12:04,911 - INFO - Starting data load to MySQL table : staging_table
+2024-09-04 15:12:12,690 - INFO - Data loaded successfully into the staging_table table
+2024-09-04 17:55:58,441 - INFO - Loading data from Data\Processed\enriched_combined_data.csv
+2024-09-04 17:55:58,833 - INFO - Starting the data cleaning process
+2024-09-04 17:55:58,833 - INFO - Cleaning the rating and votes column
+2024-09-04 17:55:58,849 - INFO - Cleaned the rating and votes column
+2024-09-04 17:55:59,003 - INFO - Duplicate rows removed
+2024-09-04 17:55:59,003 - INFO - Data cleaning process completed
+2024-09-04 17:55:59,101 - INFO - Starting data load to MySQL table : staging_table
+2024-09-04 17:56:05,722 - INFO - Data loaded successfully into the staging_table table
+2024-09-04 17:57:23,491 - INFO - Loading data from Data\Processed\enriched_combined_data.csv
+2024-09-04 17:57:23,869 - INFO - Starting the data cleaning process
+2024-09-04 17:57:23,869 - INFO - Cleaning the rating and votes column
+2024-09-04 17:57:23,963 - INFO - Cleaned the rating and votes column
+2024-09-04 17:57:24,074 - INFO - Duplicate rows removed
+2024-09-04 17:57:24,074 - INFO - Data cleaning process completed
+2024-09-04 17:57:24,123 - INFO - Starting data load to MySQL table : staging_table
+2024-09-04 17:57:30,267 - INFO - Data loaded successfully into the staging_table table

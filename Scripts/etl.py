@@ -14,10 +14,10 @@ def clean_data(df):
 
     logger.info('Cleaning the rating and votes column')
     df['RATING'] = df['RATING'].replace('NEW', None)
-    df['VOTES'] = df['RATING'].replace('NEW', None)
+    df['VOTES'] = df['VOTES'].replace('NEW', None)
 
     df['RATING'] = pd.to_numeric(df['RATING'], errors='coerce').fillna(0).astype(int)
-    df['VOTES'] = pd.to_numeric(df['RATING'], errors='coerce').fillna(0).astype(int)
+    df['VOTES'] = pd.to_numeric(df['VOTES'], errors='coerce').fillna(0).astype(int)
 
     logger.info('Cleaned the rating and votes column')
 

@@ -74,3 +74,25 @@
 2024-09-05 14:49:16,910 - INFO - Data cleaning process completed
 2024-09-05 14:49:17,000 - INFO - Starting data load to MySQL table: staging_table
 2024-09-05 14:49:25,668 - INFO - Data loaded successfully into the staging_table table
+2024-09-05 15:07:26,065 - INFO - Loading data from Data\Processed\enriched_combined_data.csv
+2024-09-05 15:07:26,463 - INFO - Starting the data cleaning process
+2024-09-05 15:07:26,463 - INFO - Cleaning the RATING and VOTES columns
+2024-09-05 15:07:26,557 - INFO - Cleaned the RATING and VOTES columns successfully
+2024-09-05 15:07:26,557 - INFO - Translating non-English words in the RATING_TYPE column
+2024-09-05 15:07:26,798 - INFO - Translation of non-English words in RATING_TYPE completed
+2024-09-05 15:07:26,798 - INFO - Removing duplicate rows
+2024-09-05 15:07:26,941 - INFO - Duplicate rows removed
+2024-09-05 15:07:26,941 - INFO - Data cleaning process completed
+2024-09-05 15:07:26,991 - INFO - Starting data load to MySQL table: staging_table
+2024-09-05 15:07:33,666 - INFO - Data loaded successfully into the staging_table table
+2024-09-05 15:08:23,699 - INFO - Loading data from Data\Processed\enriched_combined_data.csv
+2024-09-05 15:08:24,097 - INFO - Starting the data cleaning process
+2024-09-05 15:08:24,097 - INFO - Cleaning the RATING and VOTES columns
+2024-09-05 15:08:24,197 - INFO - Cleaned the RATING and VOTES columns successfully
+2024-09-05 15:08:24,197 - INFO - Translating non-English words in the RATING_TYPE column
+2024-09-05 15:08:24,429 - INFO - Translation of non-English words in RATING_TYPE completed
+2024-09-05 15:08:24,429 - INFO - Removing duplicate rows
+2024-09-05 15:08:24,564 - INFO - Duplicate rows removed
+2024-09-05 15:08:24,564 - INFO - Data cleaning process completed
+2024-09-05 15:08:24,612 - INFO - Starting data load to MySQL table: staging_table
+2024-09-05 15:08:32,269 - INFO - Data loaded successfully into the staging_table table

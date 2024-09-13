@@ -5,7 +5,6 @@ from tqdm import tqdm
 def load_and_combine_data(data_dir):
     combined_data = []
 
-    # Iterate over city directories with progress reporting
     city_dirs = [d for d in os.listdir(data_dir) if os.path.isdir(os.path.join(data_dir, d))]
     for city in tqdm(city_dirs, desc='Processing cities'):
         city_path = os.path.join(data_dir, city)

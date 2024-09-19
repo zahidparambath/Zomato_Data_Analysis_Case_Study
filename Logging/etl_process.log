@@ -49,16 +49,16 @@
 2024-09-05 14:36:47,144 - INFO - Connected to the database successfully
 2024-09-05 14:36:47,707 - INFO - Starting translation process
 2024-09-05 14:36:47,707 - ERROR - Error translating 'None': 'NoneType' object has no attribute 'isascii'
-2024-09-05 14:36:47,707 - INFO - Translating 'Ve\u013emi dobré'
-2024-09-05 14:36:49,290 - INFO - Translating 'Çok iyi'
+2024-09-05 14:36:47,707 - INFO - Translating 'Ve\u013emi dobrï¿½'
+2024-09-05 14:36:49,290 - INFO - Translating 'ï¿½ok iyi'
 2024-09-05 14:36:49,536 - INFO - Translating '\u0130yi'
-2024-09-05 14:36:49,790 - INFO - Translating 'Média'
-2024-09-05 14:36:50,043 - INFO - Translating 'Dobré'
-2024-09-05 14:36:50,282 - INFO - Translating 'Vynikajúce'
-2024-09-05 14:36:52,156 - INFO - Translating 'Skv\u011blá volba'
+2024-09-05 14:36:49,790 - INFO - Translating 'Mï¿½dia'
+2024-09-05 14:36:50,043 - INFO - Translating 'Dobrï¿½'
+2024-09-05 14:36:50,282 - INFO - Translating 'Vynikajï¿½ce'
+2024-09-05 14:36:52,156 - INFO - Translating 'Skv\u011blï¿½ volba'
 2024-09-05 14:36:53,280 - INFO - Translating 'Pr\u016fm\u011br'
 2024-09-05 14:36:53,541 - INFO - Translating '\u015arednio'
-2024-09-05 14:36:53,818 - INFO - Translating 'Skv\u011blé'
+2024-09-05 14:36:53,818 - INFO - Translating 'Skv\u011blï¿½'
 2024-09-05 14:36:54,087 - INFO - Translating 'Nedostatek hlas\u016f'
 2024-09-05 14:36:55,424 - INFO - Translation completed
 2024-09-05 14:36:55,464 - INFO - Translated data updated in the same MySQL table successfully
@@ -96,3 +96,126 @@
 2024-09-05 15:08:24,564 - INFO - Data cleaning process completed
 2024-09-05 15:08:24,612 - INFO - Starting data load to MySQL table: staging_table
 2024-09-05 15:08:32,269 - INFO - Data loaded successfully into the staging_table table
+2024-09-17 15:56:13,391 - INFO - Starting ETL pipeline
+2024-09-17 15:56:13,765 - INFO - Loaded data from Data/Processed/combined_data.csv
+2024-09-17 15:56:13,765 - INFO - Starting extraction of latitude and longitude for the dataset
+2024-09-17 17:19:54,120 - INFO - Extraction completed
+2024-09-17 17:19:54,157 - INFO - Starting the data cleaning process
+2024-09-17 17:19:54,159 - INFO - Cleaning the RATING and VOTES columns
+2024-09-17 17:19:54,264 - INFO - Cleaned the RATING and VOTES columns successfully
+2024-09-17 17:19:54,264 - INFO - Translating non-English words in the RATING_TYPE column
+2024-09-17 17:19:54,503 - INFO - Translation of non-English words in RATING_TYPE completed
+2024-09-17 17:19:54,503 - INFO - Removing duplicate rows based on RESTAURANT NAME
+2024-09-17 17:19:54,543 - INFO - Removed 20993 duplicate rows
+2024-09-17 17:19:54,543 - INFO - Data cleaning process completed
+2024-09-17 17:19:54,962 - INFO - Data enrichment and cleaning completed and saved to Data/Processed/enriched_cleaned_data.csv
+2024-09-17 17:19:54,962 - INFO - Staging data into MySQL table 'staging_table'
+2024-09-17 17:19:54,966 - INFO - Loading data from Data/Processed/enriched_cleaned_data.csv
+2024-09-17 17:19:55,322 - INFO - Starting data load to MySQL table: staging_table
+2024-09-17 17:20:01,987 - INFO - Data loaded successfully into the staging_table table
+2024-09-17 17:20:01,996 - INFO - Staging process completed
+2024-09-17 17:20:01,996 - INFO - Creating dimensions and facts
+2024-09-17 17:20:01,996 - INFO - Starting the process of creating dimensions and facts
+2024-09-17 17:20:01,996 - INFO - Loading data from staging table
+2024-09-17 18:01:13,249 - INFO - Starting ETL pipeline
+2024-09-17 18:01:13,610 - INFO - Loaded data from Data/Processed/combined_data.csv
+2024-09-17 18:01:13,610 - INFO - Starting extraction of latitude and longitude for the dataset
+2024-09-17 19:24:14,743 - INFO - Extraction completed
+2024-09-17 19:24:14,770 - INFO - Starting the data cleaning process
+2024-09-17 19:24:14,770 - INFO - Cleaning the RATING and VOTES columns
+2024-09-17 19:24:14,850 - INFO - Cleaned the RATING and VOTES columns successfully
+2024-09-17 19:24:14,850 - INFO - Translating non-English words in the RATING_TYPE column
+2024-09-17 19:24:15,012 - INFO - Translation of non-English words in RATING_TYPE completed
+2024-09-17 19:24:15,012 - INFO - Removing duplicate rows based on NAME, CITY, and REGION
+2024-09-17 19:55:11,033 - INFO - Starting ETL pipeline
+2024-09-17 19:55:11,314 - INFO - Loaded data from Data/Processed/combined_data.csv
+2024-09-17 19:55:11,314 - INFO - Starting extraction of latitude and longitude for the dataset
+2024-09-17 21:18:15,022 - INFO - Extraction completed
+2024-09-17 21:18:15,038 - INFO - Starting the data cleaning process
+2024-09-17 21:18:15,038 - INFO - Cleaning the RATING and VOTES columns
+2024-09-17 21:18:15,114 - INFO - Cleaned the RATING and VOTES columns successfully
+2024-09-17 21:18:15,114 - INFO - Translating non-English words in the RATING_TYPE column
+2024-09-17 21:18:15,272 - INFO - Translation of non-English words in RATING_TYPE completed
+2024-09-17 21:18:15,272 - INFO - Removing duplicate rows based on NAME, CITY, and REGION
+2024-09-17 21:18:15,333 - INFO - Removed 3136 duplicate rows
+2024-09-17 21:18:15,333 - INFO - Data cleaning process completed
+2024-09-17 21:18:15,727 - INFO - Data enrichment and cleaning completed and saved to Data/Processed/enriched_cleaned_data.csv
+2024-09-17 21:18:15,727 - INFO - Staging data into MySQL table 'staging_table'
+2024-09-17 21:18:15,727 - INFO - Loading data from Data/Processed/enriched_cleaned_data.csv
+2024-09-17 21:18:16,310 - INFO - Starting data load to MySQL table: staging_table
+2024-09-17 21:18:25,252 - INFO - Data loaded successfully into the staging_table table
+2024-09-17 21:18:25,258 - INFO - Staging process completed
+2024-09-17 21:18:25,259 - INFO - Creating dimensions and facts
+2024-09-17 21:18:25,259 - INFO - Starting the process of creating dimensions and facts
+2024-09-17 21:18:25,259 - INFO - Loading data from staging table
+2024-09-17 21:18:26,039 - INFO - Creating dim_restaurant dimension
+2024-09-17 21:41:10,300 - INFO - Starting the process of creating dimensions and facts
+2024-09-17 21:41:10,300 - INFO - Loading data from staging table
+2024-09-17 21:41:11,135 - INFO - Creating dim_restaurant dimension
+2024-09-17 21:48:04,884 - INFO - Starting the process of creating dimensions and facts
+2024-09-17 21:48:04,884 - INFO - Loading data from staging table
+2024-09-17 21:48:05,676 - INFO - Creating dim_restaurant dimension
+2024-09-17 21:54:12,245 - INFO - Starting the process of creating dimensions and facts
+2024-09-17 21:54:12,245 - INFO - Loading data from staging table
+2024-09-17 21:54:12,977 - INFO - Creating dim_restaurant dimension
+2024-09-17 21:56:22,415 - INFO - Starting the process of creating dimensions and facts
+2024-09-17 21:56:22,415 - INFO - Loading data from staging table
+2024-09-17 21:56:23,146 - INFO - Creating dim_restaurant dimension
+2024-09-17 21:56:27,106 - INFO - dim_restaurant dimension created successfully
+2024-09-17 21:56:27,106 - INFO - Creating dim_rating_type dimension
+2024-09-17 21:56:27,165 - INFO - dim_rating_type dimension created successfully
+2024-09-17 21:56:27,165 - INFO - Creating dim_time dimension
+2024-09-17 21:56:27,410 - INFO - dim_time dimension created successfully
+2024-09-17 21:56:27,410 - INFO - Creating fact_restaurant fact table
+2024-09-17 22:01:50,375 - INFO - Starting the process of creating dimensions and facts
+2024-09-17 22:01:50,375 - INFO - Loading data from staging table
+2024-09-17 22:01:51,099 - INFO - Creating dim_restaurant dimension
+2024-09-17 22:01:55,328 - INFO - dim_restaurant dimension created successfully
+2024-09-17 22:01:55,328 - INFO - Creating dim_rating_type dimension
+2024-09-17 22:01:55,391 - INFO - dim_rating_type dimension created successfully
+2024-09-17 22:01:55,391 - INFO - Creating dim_time dimension
+2024-09-17 22:01:55,668 - INFO - dim_time dimension created successfully
+2024-09-17 22:01:55,668 - INFO - Creating fact_restaurant fact table
+2024-09-17 22:03:13,677 - INFO - Starting the process of creating dimensions and facts
+2024-09-17 22:03:13,677 - INFO - Loading data from staging table
+2024-09-17 22:03:14,530 - INFO - Creating dim_restaurant dimension
+2024-09-17 22:03:18,454 - INFO - dim_restaurant dimension created successfully
+2024-09-17 22:03:18,454 - INFO - Creating dim_rating_type dimension
+2024-09-17 22:03:18,521 - INFO - dim_rating_type dimension created successfully
+2024-09-17 22:03:18,521 - INFO - Creating dim_time dimension
+2024-09-17 22:03:18,992 - INFO - dim_time dimension created successfully
+2024-09-17 22:03:18,992 - INFO - Creating fact_restaurant fact table
+2024-09-17 22:03:21,698 - INFO - fact_restaurant fact table created successfully
+2024-09-17 22:03:21,698 - INFO - Process completed successfully
+2024-09-17 22:04:10,861 - INFO - Starting ETL pipeline
+2024-09-17 22:04:11,203 - INFO - Loaded data from Data/Processed/combined_data.csv
+2024-09-17 22:04:11,203 - INFO - Starting extraction of latitude and longitude for the dataset
+2024-09-17 23:27:30,765 - INFO - Extraction completed
+2024-09-17 23:27:30,820 - INFO - Starting the data cleaning process
+2024-09-17 23:27:30,820 - INFO - Cleaning the RATING and VOTES columns
+2024-09-17 23:27:30,939 - INFO - Cleaned the RATING and VOTES columns successfully
+2024-09-17 23:27:30,939 - INFO - Translating non-English words in the RATING_TYPE column
+2024-09-17 23:27:31,210 - INFO - Translation of non-English words in RATING_TYPE completed
+2024-09-17 23:27:31,210 - INFO - Removing duplicate rows based on NAME, CITY, and REGION
+2024-09-17 23:27:31,289 - INFO - Removed 3136 duplicate rows
+2024-09-17 23:27:31,289 - INFO - Data cleaning process completed
+2024-09-17 23:27:32,101 - INFO - Data enrichment and cleaning completed and saved to Data/Processed/enriched_cleaned_data.csv
+2024-09-17 23:27:32,101 - INFO - Staging data into MySQL table 'staging_table'
+2024-09-17 23:27:32,101 - INFO - Loading data from Data/Processed/enriched_cleaned_data.csv
+2024-09-17 23:27:32,881 - INFO - Starting data load to MySQL table: staging_table
+2024-09-17 23:27:40,450 - INFO - Data loaded successfully into the staging_table table
+2024-09-17 23:27:40,453 - INFO - Staging process completed
+2024-09-17 23:27:40,453 - INFO - Creating dimensions and facts
+2024-09-17 23:27:40,453 - INFO - Starting the process of creating dimensions and facts
+2024-09-17 23:27:40,453 - INFO - Loading data from staging table
+2024-09-17 23:27:41,242 - INFO - Creating dim_restaurant dimension
+2024-09-17 23:27:45,421 - INFO - dim_restaurant dimension created successfully
+2024-09-17 23:27:45,421 - INFO - Creating dim_rating_type dimension
+2024-09-17 23:27:45,472 - INFO - dim_rating_type dimension created successfully
+2024-09-17 23:27:45,472 - INFO - Creating dim_time dimension
+2024-09-17 23:27:45,679 - INFO - dim_time dimension created successfully
+2024-09-17 23:27:45,679 - INFO - Creating fact_restaurant fact table
+2024-09-17 23:27:48,397 - INFO - fact_restaurant fact table created successfully
+2024-09-17 23:27:48,397 - INFO - Process completed successfully
+2024-09-17 23:27:48,442 - INFO - Dimensions and Facts created successfully
+2024-09-17 23:27:48,451 - INFO - Pipeline execution completed
